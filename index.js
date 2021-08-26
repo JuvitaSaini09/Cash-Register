@@ -1,12 +1,13 @@
 const billAmount = document.querySelector("#billAmount");
-const checkButton = document.querySelector("#checkButton");
+
 const cashGiven = document.querySelector("#cashGiven");
 const errorMessage = document.querySelector("#errorMessage");
 const countOfNotess=document.querySelector(".countOfNotes");
+const checkButton = document.querySelector("#checkButton");
 
 const notes = [2000, 500, 100, 20, 10, 5, 1];
 
-checkButton.addEventListener("click", OnClickHandler);
+
 
 function OnClickHandler() {
     messageHide();
@@ -52,7 +53,8 @@ for(let i=0;i<notes.length;i++)
     const totalNotes=Math.trunc(cashbackAmount/notes[i]);
    cashbackAmount =Math.trunc(cashbackAmount%notes[i]);
 
-    countOfNotess[i].innerText=totalNotes;
+   countOfNotess.innerText=totalNotes;
 
 }
 }
+checkButton.addEventListener("click", OnClickHandler);
