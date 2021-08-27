@@ -129,11 +129,11 @@ table caption {
 
 .social-media .hover-media:hover {
   font-weight: bold;
-  color: pink;
-  background-color: white;
+  color:black;
+  background-color:yellow;
 
 }
 
 .link-icons:hover {
-  background-color: pink;
+  background-color:yellow;
 }
