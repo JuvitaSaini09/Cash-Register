@@ -16,12 +16,18 @@
 
         <label for="billAmount">Bill Amount :</label>
         <input id="billAmount" type="number" />
-        <button class="next-button">Next</button>
+
+        <button id="next-button">Next</button>
+
+        <section id="cash-given-section">
         <label for="cashGiven">Cash Given :</label>
-        <input id="cashGiven" type="text" />
+        <input id="cashGiven" type="number" />
+        </section>
 
         <button id="checkButton">Check</button>
         <p id="errorMessage"></p>
+        <section id="notes-change-table">
+        
 
         <table class="notesTable">
             <caption>Return Change</caption>
@@ -45,6 +51,7 @@
                 <td>1</td>
             </tr>
         </table>
+        </section>
     </div>
     <script type="text/javascript" src="index.js"></script>
 
