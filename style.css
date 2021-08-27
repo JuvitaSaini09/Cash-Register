@@ -3,6 +3,10 @@ html,body{
   height:100%;
   margin:0;
 }
+:root{
+  --primary-cyan:#008B8B;
+  --primary-darkcyan:#2F4F4F;
+}
 .Container{
     width:80%;
     margin:auto;
@@ -12,12 +16,24 @@ html,body{
   color:red;  
 }
 .Container h1,p{
+  color:var(--primary-cyan);
     text-align: center;
 }
+p{
+  color:black;
+}
 label,input,button{
+  color:var(--primary-cyan);
   display:block;
   text-align: center;
   margin:10px auto;
+}
+input{
+  color:black;
+}
+button{
+  color:white;
+  background-color: var(--primary-darkcyan);
 }
 table caption{
   padding-bottom:5px;
@@ -37,7 +53,7 @@ th,td {
 }
 .foot {
   position:absolute ;
-  bottom:0;
+  bottom:0px;
   padding: 0px;
   width:100%;
   color: white;
