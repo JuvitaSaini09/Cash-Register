@@ -34,7 +34,7 @@ p {
 }
 
 label {
-  font-size: 30px;
+  font-size: 24px;
   font-weight: bold;
 }
 
@@ -51,14 +51,19 @@ button {
   color: var(--primary-cyan);
   display: block;
   text-align: center;
-  margin: 10px auto;
+  margin: 5px auto;
 }
 
 input {
   color: black;
+  height: 25px;
+  padding: 0px;
+  
 }
 
 button {
+  height: 30px;
+  width:100px;
   color: white;
   background-color: var(--primary-darkcyan);
 }
