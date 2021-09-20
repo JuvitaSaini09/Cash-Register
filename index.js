@@ -40,7 +40,7 @@ function OnClickHandler() {
         }
 
     } else {
-        notesChangeTable.style.display = "block";
+        notesChangeTable.style.display = "none";
         showError("Enter a valid number !!");
     }
 
@@ -51,6 +51,7 @@ function OnClickHandler() {
 function showError(error_msg) {
 
     errorMessage.style.display = "block";
+    notesChangeTable.style.display = "none";
     errorMessage.innerText = error_msg;
 }
 
