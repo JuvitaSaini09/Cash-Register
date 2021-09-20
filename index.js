@@ -33,17 +33,14 @@ function OnClickHandler() {
             const cashbackAmount = cashGiven.value - billAmount.value;
             calculateNotes(cashbackAmount);
             notesChangeTable.style.display = "block";
-            if(Number(cashGiven.value) === Number(billAmount.value)){
-
-                showError("No money is to be returned !!");
-            }
-
 
         } else {
+            notesChangeTable.style.display = "none";
             showError("The given cash is less !!");
         }
 
     } else {
+        notesChangeTable.style.display = "block";
         showError("Enter a valid number !!");
     }
 
